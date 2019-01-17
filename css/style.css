@@ -437,6 +437,15 @@ input.input-helpcare:focus,
   border: 2px solid #6cc38a;
   background-color: #bff1d2;
 }
+.btn-dropdown{
+  padding: 0.00rem 0.5rem;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #7e7e7e;
+  box-shadow: none;
+  margin-left: 0.5rem;
+  border: 3px solid #7e7e7e;
+}
 .img-overlay {
   position: absolute;
   top: 0;
