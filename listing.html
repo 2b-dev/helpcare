@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>HELPCARE</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet" />
+    <link href="owl/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="owl/assets/owl.theme.default.min.css" rel="stylesheet" />
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar sticky-top navbar-light default-helpcare-color wow bounceIn"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.png" height="40" alt="mdb logo" />
+        </a>
+        <div class="d-block d-lg-none my-lg-0 ml-auto">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#basicExampleNav"
+            aria-controls="basicExampleNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img
+              src="./img/search-mobile-icon.png"
+              class="search-mobile-icon"
+            />
+          </button>
+          <a href="#">
+            <img src="./img/register-icon.png" class="register-mobile-icon" />
+          </a>
+          <a href="#">
+            <img
+              src="./img/signin-mobile-icon.png"
+              class="signin-mobile-icon"
+            />
+          </a>
+          <!-- Avatar หลัง Login -->
+          <!--
+            <div class="btn-group">
+              <a
+                class=""
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                ><img src="./img/avatar-mobile.png" class="avatar-mobile"></a
+              >
+
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#">โปรไฟล์</a>
+                <a class="dropdown-item" href="#">เปลี่ยนรหัสผ่าน</a>
+                <a class="dropdown-item" href="#">ประวัติ</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">ออกจากระบบ</a>
+              </div>
+            </div>
+          -->
+          <!-- End Avatar หลัง Login -->
+        </div>
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+          <form class="form-inline my-2 my-lg-0 ml-auto justify-content-center">
+            <input
+              class="helpcare-serch-input"
+              placeholder="จ้างฟรีแลนซ์ทำ..."
+            />
+            <select class="browser-default custom-select select-province">
+              <option value="">จังหวัดที่คุณอยู่</option>
+            </select>
+            <select class="browser-default custom-select select-province">
+              <option value="">หมวดหมู่งาน</option>
+            </select>
+            <button class="btn btn-sm default-helpcare-btn btn-search">
+              ค้นหา
+            </button>
+            <button class="btn btn-sm default-helpcare-btn btn-search-place">
+              ค้นหาจากตำแหน่ง
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="pt-3 pb-2 section-icon-menu">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-9">
+              <div class="row justify-content-around">
+                <div class="icon-menu wow fadeIn" data-wow-delay="0.15s">
+                  <a href="#">
+                    <img src="./img/icon-menu1.png" />
+                    <p>สถานพักฟื้น</p>
+                  </a>
+                </div>
+                <div class="icon-menu wow fadeIn" data-wow-delay="0.3s">
+                  <a href="#">
+                    <img src="./img/icon-menu2.png" />
+                    <p>พยาบาล</p>
+                  </a>
+                </div>
+                <div class="icon-menu wow fadeIn" data-wow-delay="0.45s">
+                  <a href="#">
+                    <img src="./img/icon-menu3.png" />
+                    <p>อุปกรณ์ทางการแพทย์</p>
+                  </a>
+                </div>
+                <div class="icon-menu wow fadeIn" data-wow-delay="0.6s">
+                  <a href="#">
+                    <img src="./img/icon-menu4.png" />
+                    <p>ผู้ช่วยเหลือคนไข้</p>
+                  </a>
+                </div>
+                <div class="icon-menu wow fadeIn" data-wow-delay="0.75s">
+                  <a href="#">
+                    <img src="./img/icon-menu5.png" />
+                    <p>นักกายภาพบำบัด</p>
+                  </a>
+                </div>
+                <div
+                  class="icon-menu d-none d-lg-block wow fadeIn"
+                  data-wow-delay="0.9s"
+                >
+                  <a href="#">
+                    <img src="./img/icon-menu6.png" />
+                    <p>สมัครเป็นฟรีแลนซ์</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="d-none d-lg-flex col-lg-3 align-items-center">
+              <div class="media align-items-center wow fadeInRight">
+                <img
+                  class="d-flex mr-2 avatar-lg"
+                  src="./img/avatar-mobile.png"
+                />
+                <div class="media-body">
+                  <p class="my-0 font-weight-bold">ชลิตา จิตอาสา</p>
+                  <p class="my-0">พยาบาลฟรีแลนซ์</p>
+                </div>
+                <img class="d-flex ml-2" src="./img/status-green-icon.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pt-1 pb-2 border-line">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-helpcare">
+                  <li class="breadcrumb-item">
+                    <a href="#"
+                      ><i class="fa fa-home" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li class="breadcrumb-item active">พยาบาล</li>
+                </ol>
+              </nav>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 d-flex">
+              <div class="media align-items-center wow fadeInRight">
+                <img
+                  class="d-flex mr-2 avatar-group"
+                  src="./img/hit-freelance-icon.png"
+                />
+                <div class="media-body">
+                  <p class="my-0 text-group">พยาบาล</p>
+                  <p class="my-0">
+                    ทั้งหมด <span class="text-number">754</span> ท่าน
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-8 col-lg-9 d-flex align-content-end">
+              <p class="mb-0">
+                ความสวยงามของสถานที่ถือเป็นหนึ่งเรื่องสำคัญที่เจ้าของธุรกิจต้องให้ความใส่ใจเป็นปัจจัยแรก
+                ๆ เนื่องจากสามารถมอง
+                เห็นด้วยตาเปล่าและสร้างความประทับใจในแรกเห็น
+                ทำให้ตัดสินใจในการเลือกใช้บริการหรือไม่ในทันที
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="default-helpcare-sub-color pt-1 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6 my-3 wow fadeInUp">
+              <div class="card card-hit">
+                <div class="card-header card-hit-border-bottom">
+                  <div class="row">
+                    <div class="col-7 col-md-6">
+                      <div class="media align-items-center wow fadeIn">
+                        <img
+                          class="d-flex mr-2 avatar-hit"
+                          src="./img/avatar-mobile.png"
+                        />
+                        <p class="my-0">ชลิตา จิตอาสา</p>
+                        <img
+                          class="d-flex status-hit ml-1"
+                          src="./img/status-green-icon.png"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-5 col-md-6 text-right pl-0">
+                      <div class="media align-items-center wow fadeIn">
+                        <div class="media-body">
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <div class="row">
+                    <div class="col-12 col-md-4 col-lg-5">
+                      <img src="./img/img-hit.png" class="img-fluid w-100" />
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-7 py-2 px-4 px-lg-2">
+                      <span class="text-card font-weight-bold"
+                        ><img
+                          src="./img/card-nurse-icon.png"
+                          class="card-icon"
+                        />
+                        พยาบาลฟรีแลนซ์</span
+                      ><br />
+                      <span class="text-card"
+                        ><img
+                          src="./img/card-pin-icon.png"
+                          class="card-icon"
+                        />วังทองหลาง, กรุงเทพมหานคร</span
+                      ><br />
+                      <span class="text-card c-star"
+                        ><img
+                          src="./img/card-money-icon.png"
+                          class="card-icon"
+                        />
+                        ฿ 800</span
+                      >
+                      <div class="row">
+                        <div class="col-12 text-right">
+                          <div class="btn-group mr-2" role="group">
+                            <a class="bottom-card"
+                              ><img
+                                src="./img/card-like-icon.png"
+                                class="card-icon-bottom"
+                              />
+                              ถูกใจ 67
+                            </a>
+                            <a class="bottom-card"
+                              ><img
+                                src="./img/card-review-icon.png"
+                                class="card-icon-bottom"
+                              />
+                              รีวิว 401</a
+                            >
+                            <a class="bottom-card"
+                              ><img
+                                src="./img/card-readmore-icon.png"
+                                class="card-icon-bottom"
+                              />
+                              ดูข้อมูลเพิ่มเติม
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 my-3 wow fadeInUp">
+              <div class="card card-hit">
+                <div class="card-header card-hit-border-bottom">
+                  <div class="row">
+                    <div class="col-7 col-md-6">
+                      <div class="media align-items-center wow fadeIn">
+                        <img
+                          class="d-flex mr-2 avatar-hit"
+                          src="./img/avatar-mobile.png"
+                        />
+                        <p class="my-0">ชลิตา จิตอาสา</p>
+                        <img
+                          class="d-flex status-hit ml-1"
+                          src="./img/status-green-icon.png"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-5 col-md-6 text-right pl-0">
+                      <div class="media align-items-center wow fadeIn">
+                        <div class="media-body">
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <div class="row">
+                    <div class="col-12 col-md-4 col-lg-5">
+                      <img src="./img/img-hit.png" class="img-fluid w-100" />
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-7 py-2 px-4 px-lg-2">
+                      <span class="text-card font-weight-bold"
+                        ><img
+                          src="./img/card-nurse-icon.png"
+                          class="card-icon"
+                        />
+                        พยาบาลฟรีแลนซ์</span
+                      ><br />
+                      <span class="text-card"
+                        ><img
+                          src="./img/card-pin-icon.png"
+                          class="card-icon"
+                        />วังทองหลาง, กรุงเทพมหานคร</span
+                      ><br />
+                      <span class="text-card c-star"
+                        ><img
+                          src="./img/card-money-icon.png"
+                          class="card-icon"
+                        />
+                        ฿ 800</span
+                      >
+                      <div class="row">
+                        <div class="col-12 text-right">
+                          <div class="btn-group mr-2" role="group">
+                            <a class="bottom-card"
+                              ><img
+                                src="./img/card-like-icon.png"
+                                class="card-icon-bottom"
+                              />
+                              ถูกใจ 67
+                            </a>
+                            <a class="bottom-card"
+                              ><img
+                                src="./img/card-review-icon.png"
+                                class="card-icon-bottom"
+                              />
+                              รีวิว 401</a
+                            >
+                            <a class="bottom-card"
+                              ><img
+                                src="./img/card-readmore-icon.png"
+                                class="card-icon-bottom"
+                              />
+                              ดูข้อมูลเพิ่มเติม
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 my-3 wow fadeInUp">
+              <div class="card card-hit">
+                <div class="card-header card-hit-border-bottom">
+                  <div class="row">
+                    <div class="col-7 col-md-6">
+                      <div class="media align-items-center wow fadeIn">
+                        <img
+                          class="d-flex mr-2 avatar-hit"
+                          src="./img/avatar-mobile.png"
+                        />
+                        <p class="my-0">ชลิตา จิตอาสา</p>
+                        <img
+                          class="d-flex status-hit ml-1"
+                          src="./img/status-green-icon.png"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-5 col-md-6 text-right pl-0">
+                      <div class="media align-items-center wow fadeIn">
+                        <div class="media-body">
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <div class="row">
+                    <div class="col-12 col-md-4 col-lg-5">
+                      <img src="./img/img-hit.png" class="img-fluid w-100" />
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-7 py-2 px-4 px-lg-2">
+                      <span class="text-card font-weight-bold"
+                        ><img
+                          src="./img/card-nurse-icon.png"
+                          class="card-icon"
+                        />
+                        พยาบาลฟรีแลนซ์</span
+                      ><br />
+                      <span class="text-card"
+                        ><img
+                          src="./img/card-pin-icon.png"
+                          class="card-icon"
+                        />วังทองหลาง, กรุงเทพมหานคร</span
+                      ><br />
+                      <span class="text-card c-star"
+                        ><img
+                          src="./img/card-money-icon.png"
+                          class="card-icon"
+                        />
+                        ฿ 800</span
+                      >
+                      <div class="row">
+                        <div class="col-12 text-right">
+                          <div class="btn-group mr-2" role="group">
+                            <a class="bottom-card"
+                              ><img
+                                src="./img/card-like-icon.png"
+                                class="card-icon-bottom"
+                              />
+                              ถูกใจ 67
+                            </a>
+                            <a class="bottom-card"
+                              ><img
+                                src="./img/card-review-icon.png"
+                                class="card-icon-bottom"
+                              />
+                              รีวิว 401</a
+                            >
+                            <a class="bottom-card"
+                              ><img
+                                src="./img/card-readmore-icon.png"
+                                class="card-icon-bottom"
+                              />
+                              ดูข้อมูลเพิ่มเติม
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 my-3 wow fadeInUp">
+              <div class="card card-hit">
+                <div class="card-header card-hit-border-bottom">
+                  <div class="row">
+                    <div class="col-7 col-md-6">
+                      <div class="media align-items-center wow fadeIn">
+                        <img
+                          class="d-flex mr-2 avatar-hit"
+                          src="./img/avatar-mobile.png"
+                        />
+                        <p class="my-0">ชลิตา จิตอาสา</p>
+                        <img
+                          class="d-flex status-hit ml-1"
+                          src="./img/status-green-icon.png"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-5 col-md-6 text-right pl-0">
+                      <div class="media align-items-center wow fadeIn">
+                        <div class="media-body">
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <div class="row">
+                    <div class="col-12 col-md-4 col-lg-5">
+                      <img src="./img/img-hit.png" class="img-fluid w-100" />
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-7 py-2 px-4 px-lg-2">
+                      <span class="text-card font-weight-bold"
+                        ><img
+                          src="./img/card-nurse-icon.png"
+                          class="card-icon"
+                        />
+                        พยาบาลฟรีแลนซ์</span
+                      ><br />
+                      <span class="text-card"
+                        ><img
+                          src="./img/card-pin-icon.png"
+                          class="card-icon"
+                        />วังทองหลาง, กรุงเทพมหานคร</span
+                      ><br />
+                      <span class="text-card c-star"
+                        ><img
+                          src="./img/card-money-icon.png"
+                          class="card-icon"
+                        />
+                        ฿ 800</span
+                      >
+                      <div class="row">
+                        <div class="col-12 text-right">
+                          <div class="btn-group mr-2" role="group">
+                            <a class="bottom-card"
+                              ><img
+                                src="./img/card-like-icon.png"
+                                class="card-icon-bottom"
+                              />
+                              ถูกใจ 67
+                            </a>
+                            <a class="bottom-card"
+                              ><img
+                                src="./img/card-review-icon.png"
+                                class="card-icon-bottom"
+                              />
+                              รีวิว 401</a
+                            >
+                            <a class="bottom-card"
+                              ><img
+                                src="./img/card-readmore-icon.png"
+                                class="card-icon-bottom"
+                              />
+                              ดูข้อมูลเพิ่มเติม
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 my-3 wow fadeInUp">
+              <div class="card card-hit">
+                <div class="card-header card-hit-border-bottom">
+                  <div class="row">
+                    <div class="col-7 col-md-6">
+                      <div class="media align-items-center wow fadeIn">
+                        <img
+                          class="d-flex mr-2 avatar-hit"
+                          src="./img/avatar-mobile.png"
+                        />
+                        <p class="my-0">ชลิตา จิตอาสา</p>
+                        <img
+                          class="d-flex status-hit ml-1"
+                          src="./img/status-green-icon.png"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-5 col-md-6 text-right pl-0">
+                      <div class="media align-items-center wow fadeIn">
+                        <div class="media-body">
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <div class="row">
+                    <div class="col-12 col-md-4 col-lg-5">
+                      <img src="./img/img-hit.png" class="img-fluid w-100" />
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-7 py-2 px-4 px-lg-2">
+                      <span class="text-card font-weight-bold"
+                        ><img
+                          src="./img/card-nurse-icon.png"
+                          class="card-icon"
+                        />
+                        พยาบาลฟรีแลนซ์</span
+                      ><br />
+                      <span class="text-card"
+                        ><img
+                          src="./img/card-pin-icon.png"
+                          class="card-icon"
+                        />วังทองหลาง, กรุงเทพมหานคร</span
+                      ><br />
+                      <span class="text-card c-star"
+                        ><img
+                          src="./img/card-money-icon.png"
+                          class="card-icon"
+                        />
+                        ฿ 800</span
+                      >
+                      <div class="row">
+                        <div class="col-12 text-right">
+                          <div class="btn-group mr-2" role="group">
+                            <a class="bottom-card"
+                              ><img
+                                src="./img/card-like-icon.png"
+                                class="card-icon-bottom"
+                              />
+                              ถูกใจ 67
+                            </a>
+                            <a class="bottom-card"
+                              ><img
+                                src="./img/card-review-icon.png"
+                                class="card-icon-bottom"
+                              />
+                              รีวิว 401</a
+                            >
+                            <a class="bottom-card"
+                              ><img
+                                src="./img/card-readmore-icon.png"
+                                class="card-icon-bottom"
+                              />
+                              ดูข้อมูลเพิ่มเติม
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 my-3 wow fadeInUp">
+              <div class="card card-hit">
+                <div class="card-header card-hit-border-bottom">
+                  <div class="row">
+                    <div class="col-7 col-md-6">
+                      <div class="media align-items-center wow fadeIn">
+                        <img
+                          class="d-flex mr-2 avatar-hit"
+                          src="./img/avatar-mobile.png"
+                        />
+                        <p class="my-0">ชลิตา จิตอาสา</p>
+                        <img
+                          class="d-flex status-hit ml-1"
+                          src="./img/status-green-icon.png"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-5 col-md-6 text-right pl-0">
+                      <div class="media align-items-center wow fadeIn">
+                        <div class="media-body">
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                          <i class="fa fa-star c-star" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <div class="row">
+                    <div class="col-12 col-md-4 col-lg-5">
+                      <img src="./img/img-hit.png" class="img-fluid w-100" />
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-7 py-2 px-4 px-lg-2">
+                      <span class="text-card font-weight-bold"
+                        ><img
+                          src="./img/card-nurse-icon.png"
+                          class="card-icon"
+                        />
+                        พยาบาลฟรีแลนซ์</span
+                      ><br />
+                      <span class="text-card"
+                        ><img
+                          src="./img/card-pin-icon.png"
+                          class="card-icon"
+                        />วังทองหลาง, กรุงเทพมหานคร</span
+                      ><br />
+                      <span class="text-card c-star"
+                        ><img
+                          src="./img/card-money-icon.png"
+                          class="card-icon"
+                        />
+                        ฿ 800</span
+                      >
+                      <div class="row">
+                        <div class="col-12 text-right">
+                          <div class="btn-group mr-2" role="group">
+                            <a class="bottom-card"
+                              ><img
+                                src="./img/card-like-icon.png"
+                                class="card-icon-bottom"
+                              />
+                              ถูกใจ 67
+                            </a>
+                            <a class="bottom-card"
+                              ><img
+                                src="./img/card-review-icon.png"
+                                class="card-icon-bottom"
+                              />
+                              รีวิว 401</a
+                            >
+                            <a class="bottom-card"
+                              ><img
+                                src="./img/card-readmore-icon.png"
+                                class="card-icon-bottom"
+                              />
+                              ดูข้อมูลเพิ่มเติม
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link">หน้าแรก</a>
+                  </li>
+                  <li class="page-item disabled">
+                    <a class="page-link" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                  </li>
+                  <li class="page-item active"><a class="page-link">1</a></li>
+                  <li class="page-item"><a class="page-link">2</a></li>
+                  <li class="page-item"><a class="page-link">3</a></li>
+                  <li class="page-item"><a class="page-link">4</a></li>
+                  <li class="page-item"><a class="page-link">5</a></li>
+                  <li class="page-item">
+                    <a class="page-link" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link">หน้าสุดท้าย</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="pb-3">
+      <div class="contianer-fluid text-center border-line-top">
+        <img src="./img/head_footer_icon.png" class="head-footer-icon" />
+      </div>
+      <div class="container mt-1">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-5 col-lg-3">
+            <div class="row justify-content-around">
+              <div class="col text-center">
+                <a href="#!"><img src="./img/footer-facebook.png"/></a>
+              </div>
+              <div class="col text-center">
+                <a href="#!"><img src="./img/footer-googleplus.png"/></a>
+              </div>
+              <div class="col text-center">
+                <a href="#!"><img src="./img/footer-ig.png"/></a>
+              </div>
+              <div class="col text-center">
+                <a href="#!"><img src="./img/footer-youtube.png"/></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 text-center">
+            <p class="mb-0">© 2018 helpcare.com All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="owl/owl.carousel.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>

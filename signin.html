@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>HELPCARE</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet" />
+    <link href="owl/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="owl/assets/owl.theme.default.min.css" rel="stylesheet" />
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar sticky-top navbar-light default-helpcare-color wow bounceIn"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.png" height="40" alt="mdb logo" />
+        </a>
+        <div class="d-block d-lg-none my-lg-0 ml-auto">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#basicExampleNav"
+            aria-controls="basicExampleNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img
+              src="./img/search-mobile-icon.png"
+              class="search-mobile-icon"
+            />
+          </button>
+          <a href="#">
+            <img src="./img/register-icon.png" class="register-mobile-icon" />
+          </a>
+          <a href="#">
+            <img
+              src="./img/signin-mobile-icon.png"
+              class="signin-mobile-icon"
+            />
+          </a>
+          <!-- Avatar หลัง Login -->
+          <!--
+            <div class="btn-group">
+              <a
+                class=""
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                ><img src="./img/avatar-mobile.png" class="avatar-mobile"></a
+              >
+
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#">โปรไฟล์</a>
+                <a class="dropdown-item" href="#">เปลี่ยนรหัสผ่าน</a>
+                <a class="dropdown-item" href="#">ประวัติ</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">ออกจากระบบ</a>
+              </div>
+            </div>
+          -->
+          <!-- End Avatar หลัง Login -->
+        </div>
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+          <form class="form-inline my-2 my-lg-0 ml-auto justify-content-center">
+            <input
+              class="helpcare-serch-input"
+              placeholder="จ้างฟรีแลนซ์ทำ..."
+            />
+            <select class="browser-default custom-select select-province">
+              <option value="">จังหวัดที่คุณอยู่</option>
+            </select>
+            <select class="browser-default custom-select select-province">
+              <option value="">หมวดหมู่งาน</option>
+            </select>
+            <button class="btn btn-sm default-helpcare-btn btn-search">
+              ค้นหา
+            </button>
+            <button class="btn btn-sm default-helpcare-btn btn-search-place">
+              ค้นหาจากตำแหน่ง
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="pt-3 pb-2 section-icon-menu">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-9">
+              <div class="row justify-content-around">
+                <div class="icon-menu wow fadeIn" data-wow-delay="0.15s">
+                  <a href="#">
+                    <img src="./img/icon-menu1.png" />
+                    <p>สถานพักฟื้น</p>
+                  </a>
+                </div>
+                <div class="icon-menu wow fadeIn" data-wow-delay="0.3s">
+                  <a href="#">
+                    <img src="./img/icon-menu2.png" />
+                    <p>พยาบาล</p>
+                  </a>
+                </div>
+                <div class="icon-menu wow fadeIn" data-wow-delay="0.45s">
+                  <a href="#">
+                    <img src="./img/icon-menu3.png" />
+                    <p>อุปกรณ์ทางการแพทย์</p>
+                  </a>
+                </div>
+                <div class="icon-menu wow fadeIn" data-wow-delay="0.6s">
+                  <a href="#">
+                    <img src="./img/icon-menu4.png" />
+                    <p>ผู้ช่วยเหลือคนไข้</p>
+                  </a>
+                </div>
+                <div class="icon-menu wow fadeIn" data-wow-delay="0.75s">
+                  <a href="#">
+                    <img src="./img/icon-menu5.png" />
+                    <p>นักกายภาพบำบัด</p>
+                  </a>
+                </div>
+                <div
+                  class="icon-menu d-none d-lg-block wow fadeIn"
+                  data-wow-delay="0.9s"
+                >
+                  <a href="#">
+                    <img src="./img/icon-menu6.png" />
+                    <p>สมัครเป็นฟรีแลนซ์</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="d-none d-lg-flex col-lg-3 align-items-center">
+              <div class="media align-items-center wow fadeInRight">
+                <img
+                  class="d-flex mr-2 avatar-lg"
+                  src="./img/avatar-mobile.png"
+                />
+                <div class="media-body">
+                  <p class="my-0 font-weight-bold">ชลิตา จิตอาสา</p>
+                  <p class="my-0">พยาบาลฟรีแลนซ์</p>
+                </div>
+                <img class="d-flex ml-2" src="./img/status-green-icon.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-fluid bg-signin">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-3 py-5 mt-3">
+              <div class="contain-title-login">
+                <span class="headtitlelogin"
+                  >เข้าสู่ระบบ<img src="./img/logoLogin.png" class="logo-login"
+                /></span>
+              </div>
+              <input class="form-control form-control-sm input-helpcare my-3" type="email" placeholder="อีเมล">
+              <input class="form-control form-control-sm input-helpcare mt-3" type="password" placeholder="รหัสผ่าน">
+              <a href="#!"><span class="icon-q">?</span><span class="text-forgot">ลืมรหัสผ่าน</span></a>
+              <button class="btn btn-sm btn-block default-helpcare-color btn-page-login ">เข้าสู่ระบบ</button>
+              <p class="text-center my-2">หรือเข้าสู่ระบบด้วย</p>
+              <button class="btn btn-sm btn-block btn-blue btn-page-login ">Facebook</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="pb-3">
+      <div class="contianer-fluid text-center border-line-top">
+        <img src="./img/head_footer_icon.png" class="head-footer-icon" />
+      </div>
+      <div class="container mt-1">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-5 col-lg-3">
+            <div class="row justify-content-around">
+              <div class="col text-center">
+                <a href="#!"><img src="./img/footer-facebook.png"/></a>
+              </div>
+              <div class="col text-center">
+                <a href="#!"><img src="./img/footer-googleplus.png"/></a>
+              </div>
+              <div class="col text-center">
+                <a href="#!"><img src="./img/footer-ig.png"/></a>
+              </div>
+              <div class="col text-center">
+                <a href="#!"><img src="./img/footer-youtube.png"/></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 text-center">
+            <p class="mb-0">© 2018 helpcare.com All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="owl/owl.carousel.min.js"></script>
+    <script>
+      new WOW().init();
+      $(document).ready(function() {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 20,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false
+            },
+            600: {
+              items: 1,
+              nav: false
+            },
+            1000: {
+              items: 2,
+              nav: false,
+              loop: true
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

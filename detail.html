@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>HELPCARE</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet" />
+    <link href="owl/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="owl/assets/owl.theme.default.min.css" rel="stylesheet" />
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar sticky-top navbar-light default-helpcare-color wow bounceIn"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.png" height="40" alt="mdb logo" />
+        </a>
+        <div class="d-block d-lg-none my-lg-0 ml-auto">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#basicExampleNav"
+            aria-controls="basicExampleNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img
+              src="./img/search-mobile-icon.png"
+              class="search-mobile-icon"
+            />
+          </button>
+          <a href="#">
+            <img src="./img/register-icon.png" class="register-mobile-icon" />
+          </a>
+          <a href="#">
+            <img
+              src="./img/signin-mobile-icon.png"
+              class="signin-mobile-icon"
+            />
+          </a>
+          <!-- Avatar หลัง Login -->
+          <!--
+            <div class="btn-group">
+              <a
+                class=""
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                ><img src="./img/avatar-mobile.png" class="avatar-mobile"></a
+              >
+
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#">โปรไฟล์</a>
+                <a class="dropdown-item" href="#">เปลี่ยนรหัสผ่าน</a>
+                <a class="dropdown-item" href="#">ประวัติ</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">ออกจากระบบ</a>
+              </div>
+            </div>
+          -->
+          <!-- End Avatar หลัง Login -->
+        </div>
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+          <form class="form-inline my-2 my-lg-0 ml-auto justify-content-center">
+            <input
+              class="helpcare-serch-input"
+              placeholder="จ้างฟรีแลนซ์ทำ..."
+            />
+            <select class="browser-default custom-select select-province">
+              <option value="">จังหวัดที่คุณอยู่</option>
+            </select>
+            <select class="browser-default custom-select select-province">
+              <option value="">หมวดหมู่งาน</option>
+            </select>
+            <button class="btn btn-sm default-helpcare-btn btn-search">
+              ค้นหา
+            </button>
+            <button class="btn btn-sm default-helpcare-btn btn-search-place">
+              ค้นหาจากตำแหน่ง
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="pt-3 pb-2 section-icon-menu">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-9">
+              <div class="row justify-content-around">
+                <div class="icon-menu wow fadeIn" data-wow-delay="0.15s">
+                  <a href="#">
+                    <img src="./img/icon-menu1.png" />
+                    <p>สถานพักฟื้น</p>
+                  </a>
+                </div>
+                <div class="icon-menu wow fadeIn" data-wow-delay="0.3s">
+                  <a href="#">
+                    <img src="./img/icon-menu2.png" />
+                    <p>พยาบาล</p>
+                  </a>
+                </div>
+                <div class="icon-menu wow fadeIn" data-wow-delay="0.45s">
+                  <a href="#">
+                    <img src="./img/icon-menu3.png" />
+                    <p>อุปกรณ์ทางการแพทย์</p>
+                  </a>
+                </div>
+                <div class="icon-menu wow fadeIn" data-wow-delay="0.6s">
+                  <a href="#">
+                    <img src="./img/icon-menu4.png" />
+                    <p>ผู้ช่วยเหลือคนไข้</p>
+                  </a>
+                </div>
+                <div class="icon-menu wow fadeIn" data-wow-delay="0.75s">
+                  <a href="#">
+                    <img src="./img/icon-menu5.png" />
+                    <p>นักกายภาพบำบัด</p>
+                  </a>
+                </div>
+                <div
+                  class="icon-menu d-none d-lg-block wow fadeIn"
+                  data-wow-delay="0.9s"
+                >
+                  <a href="#">
+                    <img src="./img/icon-menu6.png" />
+                    <p>สมัครเป็นฟรีแลนซ์</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="d-none d-lg-flex col-lg-3 align-items-center">
+              <div class="media align-items-center wow fadeInRight">
+                <img
+                  class="d-flex mr-2 avatar-lg"
+                  src="./img/avatar-mobile.png"
+                />
+                <div class="media-body">
+                  <p class="my-0 font-weight-bold">ชลิตา จิตอาสา</p>
+                  <p class="my-0">พยาบาลฟรีแลนซ์</p>
+                </div>
+                <img class="d-flex ml-2" src="./img/status-green-icon.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pt-1 pb-2 border-line header_detail"  style="background-image:url('./img/header_detail.png')">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-helpcare">
+                  <li class="breadcrumb-item">
+                    <a href="#"
+                      ><i class="fa fa-home" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li class="breadcrumb-item">
+                      <a href="#"
+                        >พยาบาล</i
+                      ></a>
+                    </li>
+                  <li class="breadcrumb-item active">ชลิตา จิตอาสา</li>
+                </ol>
+              </nav>
+            </div>
+            <div class="col-12 d-block d-md-none text-center">
+              <div class="containAvatarDetail-mobile">
+                <img src="./img/avatar-mobile.png" class="avatardetail">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sub-header-detail">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-3 col-lg-2 d-none d-md-block text-center position-relative">
+                <div class="containAvatarDetail">
+                  <img src="./img/avatar-mobile.png" class="avatardetail">
+                </div>                
+              </div>
+              <div class="col-12 col-md-5 col-lg-4">
+                <span class="name_detail">ชลิตา จิตอาสา</span>
+                <img src="./img/status-green-icon.png" class="status-icon-detail">
+                <span class="num_review_detail">: 124 รีวิว</span>
+              </div>
+              <div class="col-12 col-md-4 col-lg-6">
+                <div class="row justify-content-end">
+                  <div class="icon-detail-contain">
+                    <a href="#!">
+                      <img src="./img/write_review.png" class="icon_detail"><br>
+                      เขียนรีวิว
+                    </a>
+                  </div>
+                  <div class="icon-detail-contain">
+                      <a href="#!">
+                        <img src="./img/add_picture.png" class="icon_detail"><br>
+                        เพิ่มรูปภาพ
+                      </a>
+                  </div>
+                  <div class="icon-detail-contain">
+                      <a href="#!">
+                        <img src="./img/pin_come.png" class="icon_detail"><br>
+                        เคยมา
+                      </a>
+                  </div>
+                  <div class="icon-detail-contain">
+                      <a href="#!">
+                        <img src="./img/share_icon.png" class="icon_detail"><br>
+                        แชร์
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="pt-3 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-9 mb-3 wow fadeInLeft order-1 order-lg-1">
+                <div class="row">
+                    <div class="col-12">
+                      <p><b class="font-weight-bold">บริการทางการพยาบาลโดยพยาบาลวิชาชีพ</b> : เช่น พยาบาลพิเศษ เฝ้าไข้ ฉีดยา ทำแผล ใส่สายยางให้อาหาร 
+                        รับเฝ้าไข้รายวัน/ชั่วคราว/วันหยุดยาว/อยู่เป็นเพื่อนผู้สูงอายุจบ NA(ผู้ช่วยพยาบาล) ทำได้ทุกอย่างค่ะ feedอาหาร 
+                        ทำแผล ดูดเสมหะ ประสบการณ์ทั้ง รพ. ศูนย์ และเฝ้าตามบ้าน </p>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3 my-2 wow bounceIn">
+                        <img src="./img/r1.png" class="img-fluid w-100 border-rad-1 cs-pt">
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3 my-2 wow bounceIn">
+                        <img src="./img/r2.png" class="img-fluid w-100 border-rad-1 cs-pt">
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3 my-2 wow bounceIn">
+                        <img src="./img/r3.png" class="img-fluid w-100 border-rad-1 cs-pt">
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3 my-2 wow bounceIn">
+                        <img src="./img/r3.png" class="img-fluid w-100 border-rad-1 cs-pt">
+                        <div class="img-overlay">
+                            <h3 class="">
+                                + 123
+                            </h3>
+                            <span class="">
+                                ดูรูปภาพทั้งหมด
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3 wow fadeIn order-2 order-lg-2">
+              <div class="row">
+                <div class="col-5 pr-0">
+                  <p class="num-rate-total">5.0</p>
+                  <p class="text-total-rate">500,012 total</p>
+                  <p class="text-give-rate">ให้คะแนน..</p>
+                </div>
+                <div class="col-7 d-flex justify-content-end align-items-center pl-0">
+                  <span class="rate-star">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-12 text-right col-star">
+                        <i class="fa fa-star c-star" aria-hidden="true"></i>
+                        <i class="fa fa-star c-star" aria-hidden="true"></i>
+                        <i class="fa fa-star c-star" aria-hidden="true"></i>
+                        <i class="fa fa-star c-star" aria-hidden="true"></i>
+                        <i class="fa fa-star c-star" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-12 text-right col-star">
+                        <i class="fa fa-star c-unstar" aria-hidden="true"></i>
+                        <i class="fa fa-star c-star" aria-hidden="true"></i>
+                        <i class="fa fa-star c-star" aria-hidden="true"></i>
+                        <i class="fa fa-star c-star" aria-hidden="true"></i>
+                        <i class="fa fa-star c-star" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-12 text-right col-star">
+                        <i class="fa fa-star c-unstar" aria-hidden="true"></i>
+                        <i class="fa fa-star c-unstar" aria-hidden="true"></i>
+                        <i class="fa fa-star c-star" aria-hidden="true"></i>
+                        <i class="fa fa-star c-star" aria-hidden="true"></i>
+                        <i class="fa fa-star c-star" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-12 text-right col-star">
+                        <i class="fa fa-star c-unstar" aria-hidden="true"></i>
+                        <i class="fa fa-star c-unstar" aria-hidden="true"></i>
+                        <i class="fa fa-star c-unstar" aria-hidden="true"></i>
+                        <i class="fa fa-star c-star" aria-hidden="true"></i>
+                        <i class="fa fa-star c-star" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-12 text-right col-star">
+                        <i class="fa fa-star c-unstar" aria-hidden="true"></i>
+                        <i class="fa fa-star c-unstar" aria-hidden="true"></i>
+                        <i class="fa fa-star c-unstar" aria-hidden="true"></i>
+                        <i class="fa fa-star c-unstar" aria-hidden="true"></i>
+                        <i class="fa fa-star c-star" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-9 mb-3 order-4 order-lg-3">
+              <div class="card shadow-none border px-3 mb-3 wow fadeInUp">
+                <div class="card shadow-none">
+                  <div class="card-header bg-none card-header-review">
+                      <h5 class="font-weight-bold h5-responsive mb-0">
+                          <img src="./img/avatar-mobile.png" class="img-fluid rounded-circle avartar-img mt-0">
+                          BOOWW
+                          <span class="date-comment"><img src="./img/clock.png"> 1 วันที่ผ่านมา / วันที่ 3 ก.ค. 2018</span>
+                      </h5>
+                  </div>
+                  <div class="card-body">
+                      <h4 class="c-default">ทำได้ทุกอย่างค่ะ feed อาหาร ทำแผล ดูดเสมหะ</h4>
+                      <p class="p-review">บริการทางการพยาบาลโดยพยาบาลวิชาชีพ สายยางให้อาหาร รับเฝ้าไข้รายวัน/ชั่วคราว/วันหยุดยาว/อยู่เป็นเพื่อน</p>
+                  </div>
+                  <div class="card-footer bg-none">
+                      <span class="mr-3"><img src="./img/like_heart.png" class="mr-2"><span class="like-sm-hidden">Like</span>
+                          67</span>
+                      <span class="mr-3"><img src="./img/like_comment.png" class="mr-2"><span class="like-sm-hidden">Comment</span>
+                          4</span>
+                      <span class="mr-3"><img src="./img/like_share.png" class="mr-2"><span class="like-sm-hidden">Share</span>
+                          23</span>
+                      <span class="mr-3"><img src="./img/like_follow.png" class="mr-2"><span class="like-sm-hidden">Follow</span>
+                          2</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card shadow-none border px-3 mb-3 wow fadeInUp">
+                  <div class="card shadow-none">
+                    <div class="card-header bg-none card-header-review">
+                        <h5 class="font-weight-bold h5-responsive mb-0">
+                            <img src="./img/avatar-mobile.png" class="img-fluid rounded-circle avartar-img mt-0">
+                            BOOWW
+                            <span class="date-comment"><img src="./img/clock.png"> 1 วันที่ผ่านมา / วันที่ 3 ก.ค. 2018</span>
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="c-default">ทำได้ทุกอย่างค่ะ feed อาหาร ทำแผล ดูดเสมหะ</h4>
+                        <p class="p-review">บริการทางการพยาบาลโดยพยาบาลวิชาชีพ สายยางให้อาหาร รับเฝ้าไข้รายวัน/ชั่วคราว/วันหยุดยาว/อยู่เป็นเพื่อน</p>
+                    </div>
+                    <div class="card-footer bg-none">
+                        <span class="c-666666 mr-3"><img src="./img/like_heart.png" class="mr-2"><span class="like-sm-hidden">Like</span>
+                            67</span>
+                        <span class="c-666666 mr-3"><img src="./img/like_comment.png" class="mr-2"><span class="like-sm-hidden">Comment</span>
+                            4</span>
+                        <span class="c-666666 mr-3"><img src="./img/like_share.png" class="mr-2"><span class="like-sm-hidden">Share</span>
+                            23</span>
+                        <span class="c-666666 mr-3"><img src="./img/like_follow.png" class="mr-2"><span class="like-sm-hidden">Follow</span>
+                            2</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3 wow fadeIn order-3 order-lg-4">
+              <div class="row">
+                <div class="col-2 pr-0"><img src="./img/pin_map.png" class="img-fluid"></div>
+                <div class="col-10">
+                  <p class="text-map font-weight-bold c-default">แผนที่ติดต่อ</p>
+                  <p class="text-map2">ลาดพร้าว, กรุงเทพมหานคร</p>
+                </div>
+                <div class="col-12 my-1">
+                  <div class="contain_map">
+                    ใส่แผนที่
+                  </div>
+                </div>
+                <div class="col-12 my-1 row-border">
+                  <div class="row">
+                    <div class="col-2 pr-0"><img src="./img/clock_map.png" class="img-fluid"></div>
+                    <div class="col-10">
+                      <p class="text-time">เปิด : 10:00 - 22:00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 my-1 row-border">
+                  <div class="row">
+                    <div class="col-2 pr-0"><img src="./img/phone_map.png" class="img-fluid"></div>
+                    <div class="col-10">
+                      <p class="text-time">โทร : 054-558-5588</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 my-1">
+                  <div class="row">
+                    <div class="col-2 pr-0"><img src="./img/line.png" class="img-fluid"></div>
+                    <div class="col-10">
+                      <p class="text-time">Line : giffy8770</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="pb-3">
+      <div class="contianer-fluid text-center border-line-top">
+        <img src="./img/head_footer_icon.png" class="head-footer-icon" />
+      </div>
+      <div class="container mt-1">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-5 col-lg-3">
+            <div class="row justify-content-around">
+              <div class="col text-center">
+                <a href="#!"><img src="./img/footer-facebook.png"/></a>
+              </div>
+              <div class="col text-center">
+                <a href="#!"><img src="./img/footer-googleplus.png"/></a>
+              </div>
+              <div class="col text-center">
+                <a href="#!"><img src="./img/footer-ig.png"/></a>
+              </div>
+              <div class="col text-center">
+                <a href="#!"><img src="./img/footer-youtube.png"/></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 text-center">
+            <p class="mb-0">© 2018 helpcare.com All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="owl/owl.carousel.min.js"></script>
+    <script>
+      new WOW().init();      
+    </script>
+  </body>
+</html>
