@@ -433,7 +433,10 @@ input.input-helpcare:focus,
 .cs-pt {
   cursor: pointer;
 }
-
+.dropdown-helpcare{
+  border: 2px solid #6cc38a;
+  background-color: #bff1d2;
+}
 .img-overlay {
   position: absolute;
   top: 0;
