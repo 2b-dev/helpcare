@@ -22,8 +22,8 @@
 .default-helpcare-btn {
   background-color: #009d98;
 }
-.c-default{
-  color:#6cc38a;
+.c-default {
+  color: #6cc38a;
 }
 .c-star {
   color: #f9a322;
@@ -156,7 +156,8 @@ input.input-helpcare:focus,
   }
   .icon-menu {
     min-width: 0;
-    max-width: 25%;
+    width: 50%;
+    max-width: 50%;
     text-align: center;
   }
 }
@@ -433,12 +434,12 @@ input.input-helpcare:focus,
 .cs-pt {
   cursor: pointer;
 }
-.dropdown-helpcare{
+.dropdown-helpcare {
   border: 2px solid #6cc38a;
   background-color: #bff1d2;
 }
-.btn-dropdown{
-  padding: 0.00rem 0.5rem;
+.btn-dropdown {
+  padding: 0rem 0.5rem;
   font-size: 1rem;
   background-color: transparent;
   color: #7e7e7e;
@@ -506,10 +507,10 @@ input.input-helpcare:focus,
   width: 2rem;
   margin-top: -0.4rem;
 }
-.card-header-review{
+.card-header-review {
   border-bottom: 1px solid #6cc38a;
 }
-.card-footer{
+.card-footer {
   border-top: 1px solid #6cc38a;
 }
 .card-header-review h5 span img {
@@ -517,7 +518,7 @@ input.input-helpcare:focus,
 }
 .card-header-review h5 span {
   font-weight: 400;
-  font-size: 16px!important;
+  font-size: 16px !important;
   float: right;
 }
 p.p-review {
@@ -526,7 +527,7 @@ p.p-review {
   /*text-indent: 2rem;*/
   color: #666666;
 }
-.bg-none{
+.bg-none {
   background-color: transparent;
 }
 
@@ -551,7 +552,7 @@ p.p-review {
   }
 }
 
-.contain_map{
+.contain_map {
   width: 100%;
   height: 200px;
   border: 1px solid #c5c5c5;
@@ -561,18 +562,60 @@ p.p-review {
   align-items: center;
 }
 
-.text-map{
+.text-map {
   font-size: 25px;
   line-height: 0.5;
 }
-.text-map2{
+.text-map2 {
   font-size: 20px;
   line-height: 0;
 }
-.text-time{
+.text-time {
   font-size: 20px;
   margin-bottom: 0.8rem;
 }
-.row-border{  
+.row-border {
   border-bottom: 1px solid #6cc38a;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+.navbar.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(39, 92, 57, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  cursor: pointer;
+}
+@media only screen and (max-width: 500px) {
+  .navbar {
+    padding: 0.5rem 0.5rem;
+  }
+  .register-mobile-icon,
+  .search-mobile-icon,
+  .signin-mobile-icon {
+    height: 28px;
+  }
+  .navbar-brand img {
+    height: 35px;
+  }
+  .navbar-toggler {
+    padding: 0.25rem 0.25rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .register-mobile-icon,
+  .search-mobile-icon,
+  .signin-mobile-icon {
+    height: 25px;
+  }
+  .navbar-brand img {
+    height: 32px;
+  }
+}
+@media only screen and (min-width: 992px){
+  .section-icon-menu.navbar-collapse{
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+  }
 }
